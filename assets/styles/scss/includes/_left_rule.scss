@@ -1,0 +1,119 @@
+ul.left-rule {
+    list-style: none;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 2px;
+        position: absolute;
+        left: 6px;
+        top: 0;
+        bottom: 0;
+        background: #373a3c;
+        background: linear-gradient(180deg,rgba(55,58,60,1) 0%, rgba(55,58,60,1) 90%, rgba(55,58,60,0) 100%);
+    }
+
+    li {
+        list-style: none;
+        position: relative;
+        margin-bottom: 40px;
+
+        h4 {
+            position: relative;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            font-size: 2.35rem;
+            line-height: 1.2;
+            font-weight: 500;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: -31px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: #FFF;
+                border: 2px solid #373a3c;
+            }
+        }
+
+        span {
+            color: #818a91;
+            letter-spacing: 0.5rem;
+        }
+
+        h5 {
+            margin: 0;
+            margin-top: 5px;
+            font-weight: 300;
+            font-size: 1.4rem;
+        }
+
+        h6 {
+            margin: 0;
+            margin-top: 10px;
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media print {
+    ul.left-rule {
+        padding-left: 20px;
+
+        &::before {
+            width: 1px;
+            background: $fg;
+            -webkit-print-color-adjust: exact; 
+        }
+
+        li {
+            span {
+                font-size: 0.8rem;
+                letter-spacing: 0.1rem;
+                font-weight: 100;
+                line-height: 1.1;
+            }
+            h4 {
+                font-size: 1.2rem;
+                line-height: 1.1;
+
+                &::after {
+                    left: -19px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: block;
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 50%;
+                    background: #FFF;
+                    border: 1px solid #373a3c;
+                }
+            }
+            h5 {
+                font-size: 1rem;
+                line-height: 1;
+                font-weight: normal;
+                padding-bottom: 5px;
+            }
+            h6 {
+                border-top: 1px solid $fg;
+                padding-top: 10px;
+                margin-top: 0;
+                font-size: 1rem;
+                line-height: 1.1;
+            }
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

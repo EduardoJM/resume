@@ -1,0 +1,13 @@
+a, a:visited {
+    color: $link-color;
+    text-decoration: none;
+}
+a:hover {
+    color: darken($link-color, 10);
+}
+
+@media print {
+    a, a:visited {
+        color: $print-link-color;
+    }
+}

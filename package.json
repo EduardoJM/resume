@@ -1,0 +1,10 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-styles": "sass assets/styles/scss/resume.scss:assets/styles/css/resume.css",
+    "watch-styles": "sass --watch assets/styles/scss/resume.scss:assets/styles/css/resume.css"
+  }
+}

@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a, a:visited {
+  color: #1565C0;
+  text-decoration: none; }
+
+a:hover {
+  color: #104d92; }
+
+@media print {
+  a, a:visited {
+    color: #373a3c; } }
+body {
+  background: #FFF;
+  color: #373a3c;
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  body > .resume {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; }
+    body > .resume header {
+      display: flex; }
+    body > .resume main {
+      flex: 1;
+      display: flex; }
+    body > .resume .left-bar {
+      flex: 0 0 300px;
+      background: #1565C0;
+      color: #FFF;
+      padding: 0 20px; }
+      body > .resume .left-bar h3 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #FFF; }
+      body > .resume .left-bar h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
+      body > .resume .left-bar ul {
+        list-style-position: inside;
+        list-style-type: square; }
+        body > .resume .left-bar ul li {
+          padding: 5px 0; }
+        body > .resume .left-bar ul ul {
+          padding-left: 20px; }
+    body > .resume .content {
+      flex: 1;
+      padding: 0 8%; }
+      body > .resume .content h1 {
+        margin: 0;
+        margin-top: 35px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 1; }
+      body > .resume .content h2 {
+        margin: 0;
+        font-weight: 300;
+        line-height: 1.5;
+        font-size: 1.5rem;
+        margin: 10px 0; }
+      body > .resume .content h3 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #818a91; }
+      body > .resume .content p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.5; }
+      body > .resume .content .contacts-line > a {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 20px; }
+        body > .resume .content .contacts-line > a > i {
+          margin-right: 10px; }
+
+ul.left-rule {
+  list-style: none;
+  padding-left: 30px;
+  position: relative; }
+  ul.left-rule::before {
+    content: "";
+    width: 2px;
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    background: #373a3c;
+    background: linear-gradient(180deg, #373a3c 0%, #373a3c 90%, rgba(55, 58, 60, 0) 100%); }
+  ul.left-rule li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 40px; }
+    ul.left-rule li h4 {
+      position: relative;
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      font-size: 2.35rem;
+      line-height: 1.2;
+      font-weight: 500; }
+      ul.left-rule li h4::after {
+        content: "";
+        position: absolute;
+        left: -31px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #FFF;
+        border: 2px solid #373a3c; }
+    ul.left-rule li span {
+      color: #818a91;
+      letter-spacing: 0.5rem; }
+    ul.left-rule li h5 {
+      margin: 0;
+      margin-top: 5px;
+      font-weight: 300;
+      font-size: 1.4rem; }
+    ul.left-rule li h6 {
+      margin: 0;
+      margin-top: 10px;
+      font-weight: 300;
+      font-size: 1.2rem; }
+
+@media print {
+  ul.left-rule {
+    padding-left: 20px; }
+    ul.left-rule::before {
+      width: 1px;
+      background: #373a3c;
+      -webkit-print-color-adjust: exact; }
+    ul.left-rule li {
+      margin-bottom: 10px; }
+      ul.left-rule li span {
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+        font-weight: 100;
+        line-height: 1.1; }
+      ul.left-rule li h4 {
+        font-size: 1.2rem;
+        line-height: 1.1; }
+        ul.left-rule li h4::after {
+          left: -19px;
+          top: 50%;
+          transform: translateY(-50%);
+          display: block;
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background: #FFF;
+          border: 1px solid #373a3c; }
+      ul.left-rule li h5 {
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: normal;
+        padding-bottom: 5px; }
+      ul.left-rule li h6 {
+        border-top: 1px solid #373a3c;
+        padding-top: 10px;
+        margin-top: 0;
+        font-size: 1rem;
+        line-height: 1.1; }
+      ul.left-rule li:last-child {
+        margin-bottom: 20px; } }
+@media print {
+  body > .resume .left-bar {
+    padding: 0 15px;
+    flex: 0 0 250px;
+    background: #1565C0;
+    color: #FFF;
+    -webkit-print-color-adjust: exact; }
+    body > .resume .left-bar h3 {
+      line-height: 1;
+      font-size: 1.1rem;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    body > .resume .left-bar h2 {
+      line-height: 1;
+      font-size: 1rem;
+      margin-top: 30px;
+      margin-bottom: 10px; }
+  body > .resume .content {
+    padding: 0 30px; }
+    body > .resume .content h1 {
+      font-size: 1.5rem;
+      line-height: 1; }
+    body > .resume .content h2 {
+      font-size: 1.1rem;
+      line-height: 1; }
+    body > .resume .content h3 {
+      line-height: 1;
+      font-size: 1.1rem;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    body > .resume .content p {
+      line-height: 1.1;
+      font-size: 1rem; }
+    body > .resume .content .contacts-line a {
+      font-size: 0.9rem; } }
+@media screen and (max-width: 912px) {
+  body header .left-bar {
+    display: none; }
+  body main {
+    align-items: stretch;
+    flex-direction: column-reverse; }
+    body main .left-bar {
+      background: #FFF !important;
+      color: #373a3c !important;
+      padding: 0 8% !important;
+      margin-bottom: 30px !important; }
+      body main .left-bar h3 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 2.5rem !important;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom-color: #818a91 !important; } }
+
+/*# sourceMappingURL=resume.css.map */
