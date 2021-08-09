@@ -181,7 +181,8 @@ ul.left-rule {
         padding-top: 10px;
         margin-top: 0;
         font-size: 1rem;
-        line-height: 1.1; }
+        line-height: 1.3;
+        text-align: justify; }
       ul.left-rule li:last-child {
         margin-bottom: 20px; } }
 @media print {
@@ -215,8 +216,9 @@ ul.left-rule {
       margin-top: 10px;
       margin-bottom: 10px; }
     body > .resume .content p {
-      line-height: 1.1;
-      font-size: 1rem; }
+      line-height: 1.3;
+      font-size: 1rem;
+      text-align: justify; }
     body > .resume .content .contacts-line a {
       font-size: 0.9rem; } }
 @media screen and (max-width: 912px) {
